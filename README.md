@@ -1,49 +1,47 @@
-# UPI Scam Awareness Website
+# 🔒 UPI Scam Awareness - Security Detector
 
-## Overview
+> A modern, intelligent web-based tool to detect and protect against UPI payment scams using advanced pattern recognition and threat analysis.
 
-This project is a simple cybersecurity awareness website that explains how fake UPI payment links are used in scams.
-The goal of this project is to educate users about identifying suspicious payment links and preventing digital payment fraud.
+[![GitHub](https://img.shields.io/badge/GitHub-Dhruvanthi--KR-blue?logo=github)](https://github.com/Dhruvanthi-KR)
+[![Live Site](https://img.shields.io/badge/Live-GitHub%20Pages-green)](https://Dhruvanthi-KR.github.io/upi-scam-awareness/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
-## Features
+---
 
-* Explanation of UPI scam methods
-* Examples of fake payment links used by scammers
-* Suspicious link checker using JavaScript
-* Safety tips for secure digital payments
-* Information on how to report cyber fraud in India
+## 🎯 Features
 
-## Technologies Used
+### 🔍 **Advanced Scam Detection**
+- **60+ Suspicious Keywords** - Detects scam-related terminology
+- **Brand Spoofing Detection** - Identifies fake payment app domains (gpay-, paytm-, etc.)
+- **6 Pattern Recognition** - Detects leetspeak, obfuscation, domain spoofing, shorteners, IP addresses, long URLs
+- **Threat Score (0-100)** - Visual risk assessment with color coding
+- **Misspelling Detection** - Catches common typos used by scammers
 
-* HTML – Website structure
-* CSS – Styling and layout
-* JavaScript – Fake link detection functionality
+### 🎨 **Modern UI/UX**
+- **Glassmorphism Design** - Frosted glass effect with blur
+- **Dark Mode** - Easy on the eyes, modern aesthetic
+- **Smooth Animations** - Interactive transitions and effects
+- **Card-Based Layout** - Organized, scannable content
+- **Fully Responsive** - Works perfectly on mobile, tablet, desktop
+- **Accessibility Focused** - WCAG compliant
 
-## How It Works
+### 📊 **User-Friendly Analysis**
+- **Detailed Results Display** - Shows exact threats detected
+- **Progress Bar Visualization** - Instant threat score feedback
+- **Color-Coded Risk Levels** - Green (safe) → Red (very high risk)
+- **Safety Recommendations** - Actionable advice for each URL
+- **Found Keywords Display** - Highlights suspicious terms
 
-Users can enter a payment link in the input field on the website.
-The JavaScript program checks for suspicious keywords often used in scam links (like cashback, reward, free, etc.).
-If such words are detected, the website warns the user that the link may be a scam.
+### 🛡️ **Educational Content**
+- **Scam Examples** - Real-world scam patterns
+- **Safety Tips** - 6 essential protection practices
+- **Interactive Quiz** - Test your scam awareness
+- **Report Resources** - Contact info for cyber crime authorities
 
-## Purpose
+---
 
-The purpose of this project is to spread awareness about online payment scams and encourage safe digital payment practices.
+## 🚀 Live Demo
 
-## How to Run the Project
+**Visit:** [https://Dhruvanthi-KR.github.io/upi-scam-awareness/](https://Dhruvanthi-KR.github.io/upi-scam-awareness/)
 
-1. Download or clone the repository
-2. Open the project folder
-3. Open **index.html** in any web browser
-
-## Future Improvements
-
-* Advanced phishing link detection
-* More scam examples and awareness content
-* Improved UI design
-* Educational quiz about online payment safety
-
-## Author
-
-Dhruvanthi K R
-Computer Science Engineering Student
-
+### Quick Test URLs:
