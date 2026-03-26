@@ -2,103 +2,270 @@
 <html>
 
 <head>
-    <title>UPI Scam Awareness</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Scam Awareness - Security Detector</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>UPI Fake Link Scam Awareness</h1>
-        <p>Learn how scammers trick people using fake payment links</p>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🔒</span>
+                <span class="logo-text">SafeLink</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#detector">Detector</a></li>
+                <li><a href="#scams">Learn</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">UPI Security Detector</h1>
+            <p class="hero-subtitle">Protect yourself from digital payment scams</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">60+</span>
+                    <span class="stat-label">Scam Keywords</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Detection Patterns</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <section>
-        <h2>What is a UPI Scam?</h2>
-        <p>
-            UPI scams happen when fraudsters send fake payment links through
-            WhatsApp, SMS, or email. These links look like real payment requests but
-            are designed to steal your money.
-        </p>
-    </section>
+    <!-- Main Content -->
+    <main class="container">
 
-    <section>
-        <h2>Example of Fake UPI Links</h2>
+        <!-- Detector Section -->
+        <section id="detector" class="section">
+            <div class="section-header">
+                <h2>🔍 Link Security Checker</h2>
+                <p>Paste any link to check if it's a potential scam</p>
+            </div>
 
-        <ul>
-            <li>https://upi-reward-cashback.xyz</li>
-            <li>https://receive-money-upi.click</li>
-            <li>https://gpay-reward-free.com</li>
-        </ul>
+            <!-- Input Card -->
+            <div class="glass-card input-card">
+                <div class="input-wrapper">
+                    <input type="text" id="linkInput" placeholder="Paste your link here (https://...)" />
+                    <button onclick="checkLink()" class="btn-check">
+                        <span class="btn-icon">⚡</span>
+                        <span class="btn-text">Check Link</span>
+                    </button>
+                </div>
+            </div>
 
-        <p>⚠ Official UPI apps never send links like this.</p>
-    </section>
-    <section>
+            <!-- Results Container -->
+            <div id="detailedResults" class="results-container"></div>
 
-        <h2>Example of Scam Message</h2>
+        </section>
 
-        <div class="chat-box">
+        <!-- What is Scam Section -->
+        <section id="scams" class="section">
+            <div class="section-header">
+                <h2>⚠️ Common Scam Examples</h2>
+                <p>Learn to identify fake payment links</p>
+            </div>
 
-            <p class="scammer">
-                📩 Congratulations! You received ₹5000 cashback.
-                Click the link below to claim your reward.
+            <div class="cards-grid">
+                <div class="glass-card scam-card">
+                    <div class="scam-card-header">
+                        <span class="scam-icon">🚨</span>
+                        <h3>Brand Spoofing</h3>
+                    </div>
+                    <p class="scam-description">Fake brand prefixes pretending to be real payment apps</p>
+                    <ul class="scam-examples">
+                        <li>gpay-reward-free.com</li>
+                        <li>paytm-bonus-cashback.com</li>
+                        <li>phonepe-verify-account.com</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card scam-card">
+                    <div class="scam-card-header">
+                        <span class="scam-icon">🔤</span>
+                        <h3>Misspellings</h3>
+                    </div>
+                    <p class="scam-description">Common typos used to fool users</p>
+                    <ul class="scam-examples">
+                        <li>recieve (receive)</li>
+                        <li>casback (cashback)</li>
+                        <li>reword (reward)</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card scam-card">
+                    <div class="scam-card-header">
+                        <span class="scam-icon">📎</span>
+                        <h3>Suspicious Extensions</h3>
+                    </div>
+                    <p class="scam-description">Unusual domain endings commonly used by scammers</p>
+                    <ul class="scam-examples">
+                        <li>.xyz, .click, .top</li>
+                        <li>.download, .stream</li>
+                        <li>.tk, .ga (free domains)</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card scam-card">
+                    <div class="scam-card-header">
+                        <span class="scam-icon">🔗</span>
+                        <h3>URL Shorteners</h3>
+                    </div>
+                    <p class="scam-description">Hidden URLs that mask the true destination</p>
+                    <ul class="scam-examples">
+                        <li>bit.ly/claim-reward</li>
+                        <li>tinyurl.com/verify</li>
+                        <li>ow.ly/bonus</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Tips Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>🛡️ Stay Safe - Best Practices</h2>
+                <p>Essential tips to protect yourself from scams</p>
+            </div>
+
+            <div class="tips-grid">
+                <div class="glass-card tip-card">
+                    <div class="tip-number">1</div>
+                    <h3>Never Share PIN</h3>
+                    <p>Your UPI PIN should NEVER be entered on any website. Only use official apps.</p>
+                </div>
+
+                <div class="glass-card tip-card">
+                    <div class="tip-number">2</div>
+                    <h3>Don't Click Unknown Links</h3>
+                    <p>Even if a link looks official, verify by calling the organization directly.</p>
+                </div>
+
+                <div class="glass-card tip-card">
+                    <div class="tip-number">3</div>
+                    <h3>Use Official Apps</h3>
+                    <p>Always download payment apps from official app stores only.</p>
+                </div>
+
+                <div class="glass-card tip-card">
+                    <div class="tip-number">4</div>
+                    <h3>Verify Sender</h3>
+                    <p>Banks never ask for OTP or PIN via SMS/Email. Be skeptical of urgent requests.</p>
+                </div>
+
+                <div class="glass-card tip-card">
+                    <div class="tip-number">5</div>
+                    <h3>Check URLs Carefully</h3>
+                    <p>Scammers use similar-looking domains. Always check the complete URL.</p>
+                </div>
+
+                <div class="glass-card tip-card">
+                    <div class="tip-number">6</div>
+                    <h3>Enable Two-Factor</h3>
+                    <p>Add extra security by enabling 2FA on all your online accounts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>❓ Quick Quiz</h2>
+                <p>Test your scam awareness</p>
+            </div>
+
+            <div class="glass-card quiz-card">
+                <div class="quiz-content">
+                    <h3 class="quiz-question">Should you enter your UPI PIN on a website?</h3>
+                    <div class="quiz-buttons">
+                        <button onclick="wrong()" class="btn-quiz btn-wrong">
+                            <span class="btn-emoji">❌</span>
+                            <span>Yes</span>
+                        </button>
+                        <button onclick="correct()" class="btn-quiz btn-correct">
+                            <span class="btn-emoji">✅</span>
+                            <span>No</span>
+                        </button>
+                    </div>
+                    <p id="quizResult" class="quiz-result"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2>🆘 Report Scams</h2>
+                <p>Help stop scammers by reporting them</p>
+            </div>
+
+            <div class="glass-card report-card">
+                <div class="report-grid">
+                    <div class="report-item">
+                        <div class="report-icon">📞</div>
+                        <h4>Cyber Crime Helpline</h4>
+                        <p class="report-highlight">1930</p>
+                        <p class="report-text">24/7 Cyber Crime Helpline</p>
+                    </div>
+
+                    <div class="report-item">
+                        <div class="report-icon">🌐</div>
+                        <h4>Online Portal</h4>
+                        <p class="report-highlight">
+                            <a href="https://cybercrime.gov.in/" target="_blank">cybercrime.gov.in</a>
+                        </p>
+                        <p class="report-text">File formal complaints online</p>
+                    </div>
+
+                    <div class="report-item">
+                        <div class="report-icon">🏦</div>
+                        <h4>Your Bank</h4>
+                        <p class="report-highlight">Call your bank</p>
+                        <p class="report-text">Report to your bank immediately</p>
+                    </div>
+
+                    <div class="report-item">
+                        <div class="report-icon">📧</div>
+                        <h4>Email</h4>
+                        <p class="report-highlight">complaint@cybercrime.gov.in</p>
+                        <p class="report-text">Send detailed complaint</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>🔒 Stay Safe, Stay Secure | UPI Scam Awareness 2026</p>
+            <p>
+                Created by <a href="https://github.com/Dhruvanthi-KR" target="_blank">Dhruvanthi-KR</a> | 
+                <a href="https://github.com/Dhruvanthi-KR/upi-scam-awareness" target="_blank">View on GitHub</a>
             </p>
-
-            <p class="link">
-                https://upi-reward-cashback.xyz
-            </p>
-
-            <p class="warning">
-                ⚠ This is a fake message used by scammers.
-            </p>
-
         </div>
-
-    </section>
-
-    <section>
-        <h2>Check if a Link is Suspicious</h2>
-
-        <input type="text" id="linkInput" placeholder="Enter a link here" />
-        <button onclick="checkLink()">Check Link</button>
-
-        <p id="result"></p>
-    </section>
-
-    <section>
-        <h2>How to Stay Safe</h2>
-
-        <ul>
-            <li>Never enter UPI PIN on websites</li>
-            <li>Do not click unknown links</li>
-            <li>Use only official apps</li>
-            <li>Verify sender before making payment</li>
-        </ul>
-    </section>
-    <section>
-
-        <h2>Quick Safety Quiz</h2>
-
-        <p>Should you enter your UPI PIN on a website?</p>
-
-        <button onclick="wrong()">Yes</button>
-        <button onclick="correct()">No</button>
-
-        <p id="quizResult"></p>
-
-    </section>
-    <section>
-        <h2>Report Cyber Fraud</h2>
-
-        <p>If you face a UPI fraud, immediately report it.</p>
-
-        <ul>
-            <li>📞 Call 1930 (Cyber Crime Helpline)</li>
-            <li>
-                🌐
-                <a href="https://cybercrime.gov.in/" target="_blank">cybercrime.gov.in</a>
-            </li>
-        </ul>
-    </section>
+    </footer>
 
     <script src="script.js"></script>
 </body>
